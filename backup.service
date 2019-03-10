@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 # Another Type option: forking
-User=username
+User=username # Nome do usuario
 WorkingDirectory=/home/username/servico
 ExecStart=/bin/bash /home/username/servico/codigo-backup.sh --option=123
 Restart=on-failure
