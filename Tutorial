@@ -1,0 +1,31 @@
+
+                                  ESTE EXEMPLO DE SERVIÇO É PARA UM BACKUP DE ARQUIVOS
+
+1. Acessar diretório
+
+/lib/systemd/system
+
+2. Criar arquivo de serviço
+Dentro do diretório acima crie um arquivo, por exemplo:
+                                          backup.service
+                               
+3. Habilitar daemon
+systemctl daemnon-reload
+
+4. Habilitar serviço
+systemctl enable backup.service 
+
+5. Iniciar serviço
+systemctl start backup.service
+
+6. Ver status do serviço
+systemctl status backup.service
+
+6. Ver parar serviço
+systemctl stop backup.service
+
+
+
+
+
+                                  
