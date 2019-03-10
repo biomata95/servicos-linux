@@ -7,7 +7,7 @@ Type=simple
 # Another Type option: forking
 User=username
 WorkingDirectory=/home/username/servico
-ExecStart=/bin/bash /home/username/servico/backup.sh --option=123
+ExecStart=/bin/bash /home/username/servico/codigo-backup.sh --option=123
 Restart=on-failure
 # Other Restart options: or always, on-abort, etc
 
