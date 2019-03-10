@@ -6,6 +6,8 @@ function geraData(){
 while [ True ]
 do
 	date=$(geraData)
-	mkdir ../Backup/$date
-	sleep 5
+	touch ../Backup/logs/$date.log
+	ls -R ../../Público/* >> ../Backup/logs/$date.log
+	mkdir ../Backup/$date && cp -r ../../Público/* ../Backup/$date
+	sleep 60
 done
