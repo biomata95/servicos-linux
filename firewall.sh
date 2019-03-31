@@ -3,7 +3,7 @@
 # Configuração de Firewall do Servidor
 
 interface=enp2s0f5
-servidor=192.168.1.x
+servidor=ip -4 addr show enp2s0f5 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
 cliente=192.168.1.x
 range=192.168.1.x-192.168.1.x
 
