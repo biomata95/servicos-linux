@@ -3,7 +3,7 @@
 # Permite que uma máquina acesse o servidor via SSH
 
 host=$1
-servidor=192.168.1.6
+servidor=192.168.1.x
 interface=enp2s0f5
 
 echo ""
