@@ -36,7 +36,6 @@ echo "SSH Configurado"
 
 #============= PERMITE NETBIOS-SAMBA =============#
 
-
 iptables -A INPUT -i  $interface  -p udp -m iprange --src-range $range --dport 137 -j ACCEPT
 iptables -A INPUT -i  $interface  -p udp -m iprange --src-range $range --dport 138 -j ACCEPT
 iptables -A INPUT -i  $interface  -p tcp -m iprange --src-range $range --dport 139 -j ACCEPT
