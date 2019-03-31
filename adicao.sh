@@ -3,7 +3,7 @@
 # Permite que uma máquina acesse o servidor via SSH
 
 host=$1
-servidor=192.168.1.x
+servidor=ip -4 addr show enp2s0f5 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
 interface=enp2s0f5
 
 echo ""
